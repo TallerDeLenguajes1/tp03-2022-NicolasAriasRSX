@@ -99,5 +99,4 @@ void mostrar_costo_por_cliente(int cantCliente, cliente **clientesCargados)
         }
         printf("El cliente con ID numero %d, compro $%d\n", (*clientesCargados + i)->ClienteID, total);
     }
-    
 }

@@ -2,10 +2,13 @@
 #include<stdlib.h>
 #include<string.h>
 
-#define TAM 5
+//#define TAM 5
 
 int main()
 {
+    int TAM;
+    printf("Ingrese la cantidad de nombres a ingresar (en numeros)");
+    scanf("%d", &TAM);
     char *v[TAM];
     char *aux;
     aux= (char *)malloc(50 * sizeof(char));//Reserva de memoria para una variable auxiliar
@@ -14,7 +17,8 @@ int main()
     for (int i = 0; i < TAM; i++)
     {
         printf("%d) ingrese un nombre -> ", i+1);
-        gets(aux);
+        //gets(aux);
+        scanf("%s",aux);
         v[i]= (char *) malloc(strlen(aux) * 1 * sizeof(char));
         strcpy(v[i], aux);
     }
@@ -31,5 +35,6 @@ int main()
     }
     free(aux);
     
-    getchar();
+    //getchar();
+    scanf(" %d");
 }
