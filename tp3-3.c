@@ -36,6 +36,7 @@ int main ()
     cargar_cliente(cantCliente,&listaClientes);
     mostrar_cliente(cantCliente,&listaClientes);
     mostrar_costo_por_cliente(cantCliente, &listaClientes);
+    free(listaClientes);
 
     getchar();
 
